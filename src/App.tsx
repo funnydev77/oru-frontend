@@ -22,7 +22,7 @@ const App: React.FC = () => {
 
     setLoading(true);
     try {
-      const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/upload-oru`, {
+      const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}upload-oru`, {
         method: 'POST',
         body: formData,
       });
